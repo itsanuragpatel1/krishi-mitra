@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(cookieParser())
 // app.use(cors({credentials:true}))
 app.use(cors({
-  origin:['http://localhost:5173','https://krishi-mitra-beta.vercel.app'] ,  
+  origin:['http://localhost:5173','https://krishi-mitra-coral.vercel.app'] ,  
   credentials: true                // allow cookies
 }));
 

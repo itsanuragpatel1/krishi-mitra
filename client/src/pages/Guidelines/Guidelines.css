@@ -1,4 +1,9 @@
-.guidelines-search-container{
+.guidelines {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.guidelines-search-container {
     background-color: #f1f5f9;
     display: flex;
     flex-direction: column;
@@ -6,7 +11,12 @@
     gap: 10px;
     padding: 40px 20px;
     width: 100%;
-    max-width: 1200px;
+    margin: 0;
+}
+
+.guidelines-search-container > div {
+    width: 90%;
+    max-width: 600px;
     margin: 0 auto;
 }
 
