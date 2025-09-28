@@ -1,0 +1,47 @@
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #fcfdfe;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat-card {
+  flex: 1 1 200px;
+  text-align: center;
+  padding: 15px;
+}
+
+.stat-icon {
+  margin-bottom: 12px;
+}
+
+.stat-icon img{
+    height: 40px;
+    width: 40px;
+}
+
+.stat-value {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 5px 0;
+  color: #111;
+}
+
+.stat-label {
+  font-size: 20px;
+  color: #555;
+}
+
+/* ✅ Responsive breakpoints */
+@media (max-width: 768px) {
+  .stats-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .stat-card {
+    width: 100%;
+  }
+}

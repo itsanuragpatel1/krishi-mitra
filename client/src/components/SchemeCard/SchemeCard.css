@@ -1,0 +1,85 @@
+.scheme-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    overflow: hidden;
+    background: #fff;
+    max-width: 380px;       /* ✅ keeps card neat on desktop */
+    width: 100%;            /* ✅ makes it shrink on smaller screens */
+    /* margin: 10px auto; */
+    transition: transform 0.2s ease;
+}
+
+.scheme-card:hover {
+    transform: translateY(-4px);
+}
+
+.scheme-img-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.scheme-img-wrapper img {
+    width: 100%;
+    height: 200px;          /* ✅ consistent height */
+    object-fit: cover;      /* ✅ crops nicely */
+}
+
+.scheme-lower {
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.scheme-lower .scheme-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+    line-height: 1.4;
+    word-break: break-word;      /* ✅ handles very long words */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;       /* ✅ shows max 2 lines on desktop */
+    -webkit-box-orient: vertical;
+}
+
+.scheme-desc {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;       /* ✅ description max 3 lines */
+    -webkit-box-orient: vertical;
+}
+
+.date {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    background-color: #5a8050;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+/* ✅ Responsive tweaks */
+@media (max-width: 768px) {
+    .scheme-card {
+        max-width: 95%;
+    }
+    .scheme-img-wrapper img {
+        height: 180px;
+    }
+    .scheme-title {
+        -webkit-line-clamp: 3;
+    }
+    .scheme-desc {
+        -webkit-line-clamp: 4;
+    }
+}

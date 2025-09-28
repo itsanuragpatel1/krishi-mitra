@@ -1,0 +1,32 @@
+.promo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 40px 15px;
+
+    padding: 40px 0px;
+}
+
+.promo button{
+display: inline-block;
+outline: none;
+border: none;
+  padding: 12px 20px;
+  margin: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+  background: #2e7d32;
+  color: #fff;
+}
+
+.promo h1{
+  font-weight: 600;
+}
+
+.promo h2{
+  font-size: 20px;
+  font-weight: 400;
+}
